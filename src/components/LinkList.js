@@ -16,9 +16,7 @@ const FEED_QUERY = gql`
   }
 `;
 
-class LinkList extends Component {
-  render() {
-    return (
+const LinkList = () => 
       <Query query={FEED_QUERY}>
         {({ loading, error, data }) => {
           if (loading) return <div>Fetching</div>
@@ -33,8 +31,5 @@ class LinkList extends Component {
           )
         }}
       </Query>
-    );
-  }
-}
 
 export default LinkList;
