@@ -5,6 +5,7 @@ import LinkList from './LinkList'
 import CreateLink from './CreateLink'
 import { Switch, Route } from 'react-router-dom'
 import Login from './Login';
+import Search from './Search.js';
 
 const App = () => 
   <div className="center w85">
@@ -14,6 +15,7 @@ const App = () =>
           <Route exact path="/" component={LinkList} />
           <Route exact path="/create" component={CreateLink} />
           <Route exact path="/login" component={Login}/>
+          <Route exact path='/search' component={Search} />
         </Switch>
       </div>
     </div>
